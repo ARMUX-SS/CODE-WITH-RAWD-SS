@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic SEO Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CODE WITH RAWD SS - The best place for coding tutorials, web development, and projects.">
+    <meta name="keywords" content="coding, programming, web development, HTML, CSS, JavaScript, CODE WITH RAWD SS">
+    <meta name="author" content="CODE WITH RAWD SS">
+    
+    <!-- Open Graph (For Social Media Sharing) -->
+    <meta property="og:title" content="CODE WITH RAWD SS - Learn Coding Easily">
+    <meta property="og:description" content="The best platform for coding tutorials and projects.">
+    <meta property="og:image" content="https://yourwebsite.com/logo.png">
+    <meta property="og:url" content="https://yourwebsite.com">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CODE WITH RAWD SS">
+    <meta name="twitter:description" content="Best place for coding tutorials and projects.">
+    <meta name="twitter:image" content="https://yourwebsite.com/logo.png">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <title>CODE WITH RAWD SS - Learn Coding Easily</title>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Schema Markup (For Rich Snippets) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "CODE WITH RAWD SS",
+      "url": "https://yourwebsite.com",
+      "logo": "https://yourwebsite.com/logo.png",
+      "sameAs": [
+        "https://www.facebook.com/yourpage",
+        "https://www.twitter.com/yourhandle",
+        "https://www.instagram.com/yourprofile"
+      ]
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>CODE WITH RAWD SS</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li> <br>
+                <li><a href="tel:+916351403615">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Welcome to <strong>CODE WITH RAWD SS</strong>, your ultimate destination for coding tutorials, web development, and innovative projects.</p>
+        <img src="about-image.jpg" alt="About CODE WITH RAWD SS" width="100%">
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Our Projects</h2>
+        <ul id="project-list">
+            <li>Project 1: Responsive Website</li>
+            <li>Project 2: JavaScript To-Do App</li>
+            <li>Project 3: AI Chatbot</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: <a href="mailto:s70017634@gmail.com">s70017634@gmail.com</a></p>
+        <p>Phone: <a href="tel:+916351403615">+91 6351403615</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 CODE WITH RAWD SS. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
+<style>
+    /* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background: #222;
+    color: white;
+    padding: 20px;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: cyan;
+}
+
+/* Sections */
+section {
+    padding: 30px;
+    margin: 20px auto;
+    width: 80%;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    padding: 10px;
+}</style>
+<script>
+            // Load saved data
+document.addEventListener("DOMContentLoaded", function() {
+    let savedProjects = JSON.parse(localStorage.getItem("projects")) || [];
+    savedProjects.forEach(addProjectToList);
+});
+
+// Add New Project
+function addProject() {
+    let projectName = document.getElementById("project-input").value;
+    if (projectName.trim() === "") return;
+
+    addProjectToList(projectName);
+    
+    let savedProjects = JSON.parse(localStorage.getItem("projects")) || [];
+    savedProjects.push(projectName);
+    localStorage.setItem("projects", JSON.stringify(savedProjects));
+
+    document.getElementById("project-input").value = "";
+}
+
+// Display Project in List
+function addProjectToList(projectName) {
+    let projectList = document.getElementById("project-list");
+
+    let listItem = document.createElement("li");
+    listItem.innerText = projectName;
+    projectList.appendChild(listItem);
+}</script>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://yourwebsite.com/</loc>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://CODE_WITH_RAWD_SS.com/about</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://youtube.com/projects</loc>
+        <priority>0.8</priority>
+    </url>
+</urlset>
+  
